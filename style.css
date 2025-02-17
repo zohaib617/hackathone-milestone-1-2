@@ -3,21 +3,18 @@ body {
     font-family: 'Arial', sans-serif;
     background-color: #f4f4f4;
     margin: 0;
-    padding: 20px;
+    padding: 80px;
     background-image: linear-gradient(#636162, #b2afaf);
+    height: 122vh;
     font-weight: bold;
 }
 
 .resume-container {
     display: flex;
-    flex-direction: row;
     background-color: white;
-    width: 90%;
-    max-width: 1200px;
-    margin: 20px auto;
+    width: 80%;
+    margin: 0 auto;
     border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
     flex-wrap: wrap;
 }
 
@@ -30,60 +27,62 @@ body {
 }
 
 .right-section {
-    padding: 30px;
+    padding: 20px;
     width: 65%;
 }
 
 .profile-img {
-    width: 120px;
-    height: 120px;
+    background-color: #ddd;
+    width: 150px;
+    height: 150px;
     border-radius: 50%;
-    border: 4px solid #b2afaf;
+    border: 5px solid #b2afaf;
     margin: 20px auto;
     display: block;
-    box-shadow: 4px 5px 8px 3px rgba(0, 0, 0, 0.2);
+    box-shadow: 6px 7px 9px 5px rgba(7, 4, 0, 0.45);
 }
 
 h1 {
-    font-size: 24px;
+    font-size: 20px;
+    margin: 10px 0 30px;
     text-align: center;
-    margin-bottom: 20px;
 }
 
 h3 {
     background-color: #fbb03b;
     font-size: 18px;
-    padding: 10px;
-    margin: 15px 0;
+    padding: 2%;
+    margin: 20px 0 10px;
     color: #4d4d4d;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    text-align: center;
+    box-shadow: 0 0 15px #4d4d4d;
+    width: 100%;
+    max-width: 500px;
+    text-align: left;
 }
 
 ul {
     list-style-type: none;
     padding: 0;
-    margin: 0;
+    margin: 10px 0;
 }
 
 ul li {
-    padding: 5px 0;
+    margin: 5px 0;
 }
 
 button {
     background-color: #fbb03b;
     font-size: 18px;
-    padding: 10px;
-    margin: 15px 0;
+    padding: 2%;
+    margin: 20px 0 10px;
     color: #4d4d4d;
     border-radius: 10px;
-    border: none;
+    box-shadow: 0 0 15px #4d4d4d;
     width: 100%;
+    border-color: #fbb03b;
     max-width: 500px;
-    cursor: pointer;
-    display: block;
-    text-align: center;
+    text-align: left;
 }
 
 button:hover {
@@ -91,49 +90,19 @@ button:hover {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
-    .resume-container {
-        flex-direction: column;
-        width: 95%;
-    }
-
-    .left-section,
-    .right-section {
-        width: 100%;
-        padding: 20px;
-    }
-
-    .profile-img {
-        width: 100px;
-        height: 100px;
-    }
-}
-
-@media (max-width: 480px) {
-    body {
-        padding: 10px;
-    }
-
-    .resume-container {
-        width: 100%;
-    }
-
+@media (max-width: 600px) {
     .profile-img {
         width: 80px;
         height: 80px;
     }
-
-    h1 {
-        font-size: 20px;
+    .resume-container {
+        width: 100%;
+        flex-wrap: wrap;
     }
+}
 
-    h3 {
-        font-size: 16px;
-        padding: 8px;
-    }
-
-    button {
-        font-size: 16px;
-        padding: 8px;
+@media (max-width: 400px) {
+    body {
+        text-align: center;
     }
 }
